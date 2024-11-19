@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dolce Dorati</title>
+  </head>
+  <body>
+
+    <!-- encabezado de teléfono  -->
+    <div class="phone-frame">
+      <section class="status-bar">
+        <span class="clock-text">9:27</span>
+        <div>
+          <img src="assets/icons/cellularConnection.svg" alt="cellular icon" />
+          <img src="assets/icons/wifi.svg" alt="wifi icon" />
+          <img src="assets/icons/battery.svg" alt="battery icon" />
+        </div>
+      </section>
+      
+      <div class="form-wrapper">
+        <div class="form-container">
+  
+            <!-- Sección de encabezado -->
+            <div class="header">
+                <div class="header-content">
+                  <a href="index.html">
+                    <img src="assets/icons/arrow-left-thick.png" alt="flecha" class="header-icon-left">
+                  </a> 
+                  <h2 class="header-title"> Carrito </h2>
+                  <img src="assets/icons/cart-heart.png" alt="carrito" class="header-icon-right">
+                </div>
+            </div>
+
+            
+  
+            <!-- Contenedor -->
+            <div class="container-center">
+              <!-- Contenedor único para ambos pasteles -->
+              <div class="cake-container">
+                <img src="assets/img/Black Forest Cake.png" alt="Pastel de Genovesa" class="cake-card">
+                <p class="description">Pastel de Genovesa</p>
+                <p class="price">$68.000</p>
+                <div class="price-buy-container">
+                  <div class="counter-button">
+                    <button class="control-button" onclick="decrement()">-</button>
+                    <span class="number-display" id="number1">1</span>
+                    <button class="control-button" onclick="increment()">+</button>
+                  </div>
+                </div>
+                <button class="delete-button">Eliminar</button>
+                <p class="big-price">COP 68.000</p>
+
+                <img src="assets/img/Chocolate Cake.png" alt="Pastel de Chocolate" class="cake-card">
+                <p class="description">Pastel de chocolate</p>
+                <p class="price">$68.000</p>
+                <div class="price-buy-container">
+                  <div class="counter-button">
+                    <button class="control-button" onclick="decrement()">-</button>
+                    <span class="number-display" id="number2">1</span>
+                    <button class="control-button" onclick="increment()">+</button>
+                  </div>
+                </div>
+                
+                <button class="delete-button">Eliminar</button>
+                <p class="big-price">COP 68.000</p>
+              </div>
+              
+            </div>
+
+            <!-- Precios y totales -->
+             <div class="totals">
+              <p class="subtotal">Subtotal</p>
+              <p class="delivery">Domicilio</p>
+              <p class="total">Total</p>
+              <p class="price-subtotal">$ 136.000</p>
+              <p class="price-delivery">$ 5.000</p>
+              <p class="price-total">$ 141.000</p>
+             </div>
+
+             <a button class="buy-button" href="login.html">Continuar a pagar</a>
+
+      </div>
+
+      <!-- Menú -->
+      <nav class="navbar">
+        <div class="navbar--list">
+          <a href="index.html" class="navbar--list-item">
+            <img src="assets/icons/home.svg" alt="navbar home button" />
+            Inicio
+          </a>
+          <a href="search.html" class="navbar--list-item">
+            <img src="assets/icons/magnify.svg" alt="navbar search button" />
+            Buscar
+          </a>
+          <a href="cart.html" class="navbar--list-item active">
+            <img src="assets/icons/cart-heart.svg" alt="navbar cart button" />
+            Carrito
+          </a>
+          <a href="login.html" class="navbar--list-item">
+            <img src="assets/icons/account.svg" alt="navbar profile button" />
+            Perfil
+          </a>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>

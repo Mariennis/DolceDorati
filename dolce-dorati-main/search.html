@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/products.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <script src="javascript/search.JS"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dolce Dorati</title>
+  </head>
+  <body>
+
+    <!-- superior de teléfono -->
+    <div class="phone-frame">
+      <section class="status-bar">
+        <span class="clock-text">9:27</span>
+        <div>
+          <img src="assets/icons/cellularConnection.svg" alt="cellular icon" />
+          <img src="assets/icons/wifi.svg" alt="wifi icon" />
+          <img src="assets/icons/battery.svg" alt="battery icon" />
+        </div>
+      </section>
+        
+          <!-- Botón el buscador -->
+          <div class="content--container">
+            <header class="header--container">
+              <img
+                src="assets/logo.png"
+                alt="dolce dorati logo"
+                class="header--logo"
+              />
+            </header>
+            <section class="search-bar">
+              <img src="assets/icons/magnify.svg" alt="search bar icon" class="search-bar--icon"/>
+              <input type="text" class="search-bar--input" placeholder="Buscar" />
+              <button class="search-bar--filter-btn">
+                <img src="assets/icons/tune.svg" alt="">
+              </button>
+            </section>
+
+       <!-- Contenedor del buscador y fondo -->
+        <div class="search-overlay hidden">
+          <div class="search-container">
+            <!-- Input de búsqueda -->
+            <div class="search-modal" id="searchModal">
+              <div class="search-card">
+                <input id="searchInput" class="search-input" type="text" placeholder="Escribe para buscar..."/>
+                <button id="searchButton" class="search-close">Buscar</button>
+                <button class="search-close" id="closeButton">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+          <section class="categories">
+  
+            <!-- Botones de los tipos de categoría -->
+  
+            <h4>Categorías</h4>
+            <div class="categories--btn-container">
+              <a type="button" href="index.html" class="button pasteles button--state-active"> <img src="assets/icons/cake-variant.svg"> Pasteles</a>
+              <a type="button" href="indexcup.html" class="button cupcake button--state-inactive"> <img src="assets/icons/cupcake.svg" alt=""> Cupcake</a>
+              <a type="button" href="indexcookie.html" class="button galletas button--state-inactive"> <img src="assets/icons/cookie.svg" alt=""> Galletas</a>
+            </div>
+          </section>
+        </div>
+  
+        <!-- contenedores de pasteles -->
+         <div class="cake-container">
+  
+          <!-- Pastel de chocolate -->
+          <div class="cake-card">
+            <img src="assets/img/Chocolate Cake.png" alt="Pastel de chocolate">
+            <p class="description">Pastel de chocolate</p>
+            <div class="price-buy-container">
+              <p class="price">$ 68.000</p>
+            <button class="buy-button"></button>
+            </div> 
+          </div>
+  
+          <!-- Pastel de boda -->
+           <div class="cake-card">
+            <img src="assets/img/Wedding Cake.png" alt="Pastel de boda">
+            <p class="description">Pastel de matrimonio</p>
+            <div class="price-buy-container">
+              <p class="price">$ 68.000</p>
+              <button class="buy-button"></button>
+            </div>
+           </div>
+  
+           <!-- torta Genovesa -->
+           <div class="cake-card">
+            <img src="assets/img/Black Forest Cake.png" alt="Pastel de Genovesa">
+            <p class="description">Pastel de Genovesa</p>
+            <div class="price-buy-container">
+              <p class="price">$ 68.000</p>
+              <button class="buy-button"></button>
+            </div>
+           </div>
+  
+           <!-- Pastel de cumpleaños -->
+           <div class="cake-card">
+            <img src="assets/img/Happy Birthday Icing Cake.png" alt="Pastel de cumpleaños">
+            <p class="description">Pastel de cumpleaños</p>
+            <div class="price-buy-container">
+              <p class="price">$ 68.000</p>
+              <button class="buy-button"></button>
+            </div>
+           </div>
+  
+         </div>
+
+    
+
+      <!-- Menú -->
+      <nav class="navbar">
+        <div class="navbar--list">
+          <a href="index.html" class="navbar--list-item">
+            <img src="assets/icons/home.svg" alt="navbar home button" />
+            Inicio
+          </a>
+          <a href="#" class="navbar--list-item active">
+            <img src="assets/icons/magnify.svg" alt="navbar search button" />
+            Buscar
+          </a>
+          <a href="cart.html" class="navbar--list-item">
+            <img src="assets/icons/cart-heart.svg" alt="navbar cart button" />
+            Carrito
+          </a>
+          <a href="login.html" class="navbar--list-item">
+            <img src="assets/icons/account.svg" alt="navbar profile button" />
+            Perfil
+          </a>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
